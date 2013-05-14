@@ -1,0 +1,27 @@
+@mixin bg($name,$bg) 
+  background: url("../images/#{$name}.#{$bg}")
+  width: image-width("../images/#{$name}.#{$bg}")
+  height: image-height("../images/#{$name}.#{$bg}")
+
+%clearfix
+  &:before,&:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+  zoom: 1
+
+ 
+.pie
+  behavior: url(PIE.htc) \9
+@mixin pie-background($pie-top , $pie-bottom , $pie-background)
+  background-color: $pie-background
+  background-image: -webkit-linear-gradient($pie-top , $pie-bottom)
+  background-image: -moz-linear-gradient($pie-top , $pie-bottom)
+  background-image: -ms-linear-gradient($pie-top , $pie-bottom)
+  background-image: -o-linear-gradient($pie-top , $pie-bottom)
+  background-image: linear-gradient($pie-top , $pie-bottom)
+  -pie-background: linear-gradient($pie-top , $pie-bottom)
+
+
+

@@ -1,0 +1,160 @@
+.wrap
+	width: 940px
+	margin: 0 auto
+	color: #292929
+#header
+	position: relative
+	height: 120px
+	z-index: 99
+	margin: 0 0 35px
+	.logo
+		position: absolute
+		top: 35px
+		left: 25px
+		a
+			display: block
+			@include bg(logo,png)
+			text-indent: -9999px
+	.nav_sub
+		position: absolute
+		top: 35px
+		right: 20px
+		li 
+			float: left
+		a
+			text-indent: -9999px
+			display: block
+			margin: 0 7px 0 0
+			&:hover 
+				@include opacity(0.8)
+		li.tweet a
+			@include bg(dot_tweet,png)
+		li.facebook a 
+			@include bg(dot_facebook,png)
+	.menu
+		position: absolute
+		bottom: 0px
+		right: 20px
+		li 
+			float: left
+			margin: 0 0 0 30px
+			font-size: 16px
+			font-weight: bold
+			a
+				display: block
+				color: #292929
+				&:hover
+					color: #01A5CA
+#container
+	.banner
+		margin: 0 0 35px 0
+		@extend %clearfix
+		.img 
+			float: left
+			width: 600px
+		.img_content
+			float: left
+			width: 340px
+			height: 415px
+			background: #292929
+			h2 
+				padding: 40px 0 20px 40px
+				font-size: 40px 
+				color: #01A5CA
+				width: 200px
+			p 
+				color: #888
+				font-size: 16px
+				font-weight: bold
+				padding: 0 40px 35px 40px
+				line-height: 1.8
+			a.more
+				display: block
+				width: 132px
+				margin: 0 0 0 40px
+				height: 42px
+				line-height: 42px
+				text-align: center
+				background: #3F3F3F
+				color: #fff
+				font-size: 16px
+				font-weight: bold
+				@include border-radius(10px)
+				&:hover 
+					background: #000
+
+	.box
+		@extend %clearfix
+		padding: 25px 35px
+		background: #fff
+		margin-bottom: 35px
+		border: 1px solid #EDEDED
+		color: #292929
+		p 
+			line-height: 1.8
+			font-size: 16px
+			letter-spacing: 1pt
+			em 
+				color: #01A5CA
+		h2
+			font-size: 25px
+			margin-bottom: 15px
+			em
+				color: #01A5CA
+		.main 
+			font-size: 13px
+			float: left
+			width: 70%
+			margin: 0 5% 0 0
+			img 
+				float: left
+			h3,p 
+				margin-left: 220px
+				font-size: 13px
+				letter-spacing: 0
+			h3 
+				font-weight: bold
+				margin-bottom: 10px
+			section
+				@extend %clearfix
+				margin-bottom: 35px
+		.sub_bar
+			float: right 
+			width: 25%
+			ul 
+				margin: 0 0 60px 0
+			li 
+				font-size: 13px
+				margin-bottom: 10px
+				padding: 0 0 0 15px
+				background: url(../images/dot_blue.gif) no-repeat 0 50%
+			.text 
+				width: 180px
+				margin: 0 0 20px 0
+			.btn 
+				*overflow: hidden
+				height: 30px
+				background: #f4f4f4
+				border: none
+				cursor: pointer
+				@include border-radius(5px)
+				&:hover 
+					background: #434343
+					color: #fff
+	.box_main
+		padding: 25px 35px 0 35px
+#footer
+	padding-bottom: 10px
+	p 
+		text-align: center
+		line-height: 1.6
+		font-size: 13px
+		margin: 0 0 20px 0
+		a 
+			color: #01A5CA
+			&:hover
+				opacity: 0.8
+
+
+
+				
